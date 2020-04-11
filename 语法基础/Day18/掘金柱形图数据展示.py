@@ -15,6 +15,5 @@ bar2 = (
     .reversal_axis()
     .set_series_opts(label_opts=opts.LabelOpts(position="right"))
     .set_global_opts(title_opts=opts.TitleOpts(title="专题数据对比"))
-
 )
 bar2.render("./res/掘金数据柱形图.html")

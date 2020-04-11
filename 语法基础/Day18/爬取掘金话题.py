@@ -21,6 +21,7 @@ def crawl():
         "page": 0,
         "pageSize": 100
     }
+    # 指定UA，否则服务器会判定请求不合法
     headers = {
         "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N)"
         "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Mobile Safari/537.36"
@@ -47,7 +48,9 @@ def crawl():
 
 
 def data_insert(list_data):
+    # 打开数据库连接
     db = pymysql.connect("localhost", "root", "root", "db_python")
+    # 使用cursor() 方法创建一个游标对象cursor
     cursor = db.cursor()
     val = []
     for dic in list_data:
@@ -59,11 +62,15 @@ def data_insert(list_data):
     sql = "INSERT INTO t_juejin (objectId,title,description,icon,msgsCount,followersCount,attendersCount,hotIndex,createdAt,updatedAt,latestMsgCreatedAt,followed) \
         VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
     try:
+        # 执行sql语句，批量插入
         cursor.executemany(sql, val)
+        # 提交到数据库执行
         db.commit()
     except:
+        # 如果发生错误则回滚
         db.rollback()
     finally:
+        # 关闭数据库连接
         db.close()
 
 
