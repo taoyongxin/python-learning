@@ -15,7 +15,6 @@ class DownloadHanlder(Thread):
     def run(self):
         filename = self.url[self.url.rfind('/')+1:]
         resp = requests.get(self.url)
-        print(resp)
         with open('./res/img/'+filename, 'wb') as f:
             f.write(resp.content)
 

@@ -3,7 +3,7 @@ from pyecharts.charts import Line, Grid
 from pyecharts.commons.utils import JsCode
 
 """
-参考地址: https://gallery.echartsjs.com/editor.html?c=xEyDk1hwBx
+掘金折线图展示数据
 """
 
 x_data = ["我的开源项目", "划个知识点", "开发工具推荐", "掘金相亲",
