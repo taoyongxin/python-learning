@@ -32,5 +32,4 @@ if __name__ == '__main__':
     list = crawl()
     print(len(list))
     # print(list)
-
 # 运行结果为： 456门课
