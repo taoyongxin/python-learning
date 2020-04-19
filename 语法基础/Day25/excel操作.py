@@ -69,6 +69,7 @@ if __name__ == "__main__":
     student_list = get_data('班级卡片数据', 0)
     students_name = ''
     for dic in student_list:
+        print(dic)
         students_name = students_name+dic['姓名']+','
     w = wordcloud.WordCloud(width=1000,
                             height=700,
