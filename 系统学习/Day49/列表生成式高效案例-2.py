@@ -33,8 +33,9 @@ def bifurcate(lst, filter):
 
 print(bifurcate(['beep', 'boop', 'foo', 'bar'], [True, True, False, True]))
 
-
 # 11、函数分组
+
+
 def bifurcate_by(lst, fn):
     return [
         [x for x in lst if fn(x)],
