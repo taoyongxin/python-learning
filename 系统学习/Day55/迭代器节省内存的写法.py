@@ -3,11 +3,8 @@
 @Date 2020.05.18
 """
 # 求一组数据累积乘，比如[1,2,3,4], 累积乘后返回[1,2,6,24]
-
 # 一般的方法
 # 这个方法开辟一段新内存rtn,空间复杂度为O(n)
-
-
 def accumulate_div(a):
     if a is None or len(a) == 0:
         return []
@@ -21,8 +18,6 @@ rtn = accumulate_div([1, 2, 3, 4])
 print(rtn)
 
 # 更节省内存的写法
-
-
 def accumulate_div_new(a):
     if a is None or len(a) == 0:
         return []
