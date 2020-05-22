@@ -9,8 +9,6 @@ d = dict(sorted(d.items(), key=lambda item: item[1]))
 print(d)  # {'c': 1, 'a': 12, 'd': 20, 'b': 50}
 
 # 删除list里面重复元素，并保证元素顺序不变
-
-
 def del_duplicated(a):
     b = []
     for i in a:
@@ -23,8 +21,6 @@ a = [3, 2, 2, 2, 1, 3]
 print(del_duplicated(a))  # [3, 2, 1]
 
 # 找出两个列表的相同元素和不同的元素
-
-
 def ana(a, b):
     aset, bset = set(a), set(b)
     same = aset.intersection(bset)
