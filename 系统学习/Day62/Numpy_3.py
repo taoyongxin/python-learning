@@ -1,6 +1,6 @@
 """
 Numpy_3
-@Date:2020-05-25
+@Date:2020.05.25
 """
 import numpy as np
 v1 = np.arange(5)
@@ -18,7 +18,7 @@ print('输出v2:')
 print(v2)
 # 此时无法直接将两个矩阵相乘， why?
 # print(v1*v2)
-# 1.使用dot函数实现矩阵乘法
+# 1、使用dot函数实现矩阵乘法
 v3 = np.dot(v1, v2)
 print('使用dot函数实现矩阵相乘的结果：')
 print(v3)
