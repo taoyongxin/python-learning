@@ -2,7 +2,7 @@
 Pandas_1
 @Date 2020.05.27
 """
-import pandas as pd
+import pandas as pd
 # Pandas 读取URL路径的文件，得到（149 rows x 5 columns）的数据集
 result = pd.read_csv(
     'https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data')
