@@ -20,7 +20,7 @@ line, = ax.plot([0, 2], [0, 2])
 # 图表标题
 ax.set_title("a straight line ")
 # x和 y 轴的标签
-ax.set_xlabel("x label")
+ax.set_xlabel(" x label")
 ax.set_ylabel("y label")
 # 指定位置绘制图片
 canvas.print_figure('./res/img/chatpic1.jpg')
